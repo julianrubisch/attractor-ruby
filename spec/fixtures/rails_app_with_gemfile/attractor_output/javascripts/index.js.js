@@ -1,0 +1,5 @@
+const values = [{"file_path":"app/assets/javascripts/index.pack.js","x":30,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/components/Chart.jsx","x":26,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/functions.js","x":17,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/index.js","x":5,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/components/App.jsx","x":5,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/components/DisplayOptions.jsx","x":4,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/calculator/index.js","x":3,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/components/TreeMap.jsx","x":3,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/components/Suggestions.jsx","x":3,"y":0,"details":{},"history":[]},{"file_path":"src/javascript/reducers/chartReducer.js","x":3,"y":0,"details":{},"history":[]}];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const svg = scatterPlot(document.querySelector('#graph'), { values: values, displayFilenames: true });
+});

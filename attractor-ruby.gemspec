@@ -1,33 +1,50 @@
-lib = File.expand_path("lib", __dir__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "attractor/ruby/version"
+require 'attractor/ruby/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "attractor-ruby"
+  spec.name          = 'attractor-ruby'
   spec.version       = Attractor::Ruby::VERSION
-  spec.authors       = ["Julian Rubisch"]
-  spec.email         = ["julian@julianrubisch.at"]
+  spec.authors       = ['Julian Rubisch']
+  spec.email         = ['julian@julianrubisch.at']
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Churn vs Complexity Chart Generator'
+  spec.description   = <<-DESCRIPTION
+    Many authors (Michael Feathers, Sandi Metz) have shown that an evaluation of
+    churn vs complexity of files in software projects provide a valuable metric
+    towards code quality. This is another take on the matter, for ruby code, using the
+    `churn` and `flog` projects.
+  DESCRIPTION
+  spec.homepage = 'https://github.com/julianrubisch/attractor-ruby'
+  spec.licenses = ['MIT']
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = 'https://github.com/julianrubisch/attractor-ruby'
+  spec.metadata['bug_tracker_uri'] = "#{spec.homepage}/issues"
+  spec.metadata['changelog_uri'] = 'https://github.com/julianrubisch/attractor-ruby/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
+    `git ls-files -z`.split("\x0").reject do |f|
+      f.match(%r{^(src|tmp|test|spec|features|\.github)/}) ||
+        %w[.all-contributorsrc .rspec .rspec_status .travis.yml].include?(f)
+    end
   end
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency 'attractor'
+
+  spec.add_development_dependency 'aruba'
+  spec.add_development_dependency 'bundler', '~> 2.0'
+  spec.add_development_dependency 'cucumber'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'standard'
+  spec.add_development_dependency 'structured_changelog'
 end
