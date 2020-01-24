@@ -126,7 +126,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.andrewmason.me/"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Documentation">📖</a> <a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.andrewmason.me/"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Documentation">📖</a></td>
   </tr>
 </table>
 
