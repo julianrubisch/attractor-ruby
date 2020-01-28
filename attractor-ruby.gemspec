@@ -12,10 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Churn vs Complexity Chart Generator'
   spec.description   = <<-DESCRIPTION
-    Many authors (Michael Feathers, Sandi Metz) have shown that an evaluation of
-    churn vs complexity of files in software projects provide a valuable metric
-    towards code quality. This is another take on the matter, for ruby code, using the
-    `churn` and `flog` projects.
+    Attractor plugin for the Ruby programming language and its ecosystem
   DESCRIPTION
   spec.homepage = 'https://github.com/julianrubisch/attractor-ruby'
   spec.licenses = ['MIT']
@@ -37,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'attractor'
+  spec.add_dependency 'attractor', '~> 2.0'
 
   spec.add_development_dependency 'aruba'
   spec.add_development_dependency 'bundler', '~> 2.0'
