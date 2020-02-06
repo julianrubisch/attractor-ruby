@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Julian Rubisch']
   spec.email         = ['julian@julianrubisch.at']
 
-  spec.summary       = 'Churn vs Complexity Chart Generator'
+  spec.summary       = 'Attractor plugin for the Ruby programming language and its ecosystem'
   spec.description   = <<-DESCRIPTION
     Attractor plugin for the Ruby programming language and its ecosystem
   DESCRIPTION
