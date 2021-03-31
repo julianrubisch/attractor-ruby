@@ -1,6 +1,6 @@
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [attractor]: https://github.com/julianrubisch/attractor-ruby
 [forks-shield]: https://img.shields.io/github/forks/julianrubisch/attractor-ruby.svg?style=flat-square
@@ -126,13 +126,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.andrewmason.me/"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Documentation">📖</a> <a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.julianrubisch.at"><img src="https://avatars0.githubusercontent.com/u/4352208?v=4" width="100px;" alt=""/><br /><sub><b>Julian Rubisch</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=julianrubisch" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.andrewmason.me/"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Documentation">📖</a> <a href="https://github.com/julianrubisch/attractor-ruby/commits?author=andrewmcodes" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.julianrubisch.at"><img src="https://avatars0.githubusercontent.com/u/4352208?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Julian Rubisch</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=julianrubisch" title="Code">💻</a></td>
+    <td align="center"><a href="https://experimentslabs.com"><img src="https://avatars.githubusercontent.com/u/1732268?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Manuel Tancoigne</b></sub></a><br /><a href="https://github.com/julianrubisch/attractor-ruby/commits?author=mtancoigne" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
