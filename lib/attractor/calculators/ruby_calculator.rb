@@ -22,18 +22,12 @@ module Attractor
     private
 
     def build_details(totals, method_locations)
-      totals.each_with_object({}) do |(signature, score), details|
+      totals.to_h do |signature, score|
         detail = {"score" => score}
-
-        location = method_locations[signature]
-        if location
-          _, line_range = location.split(":", 2)
-          start_line, end_line = line_range.split("-", 2).map(&:to_i)
-          detail["line"] = start_line
-          detail["end_line"] = end_line
+        if (location = method_locations[signature])
+          detail["line"], detail["end_line"] = location[/:(.+)/, 1].split("-").map(&:to_i)
         end
-
-        details[signature] = detail
+        [signature, detail]
       end
     end
   end
