@@ -3,9 +3,9 @@ module Attractor
     def detect
       gemfile_exists?
     end
-    
+
     def gemfile_exists?
       File.exist? File.expand_path("Gemfile", Dir.pwd)
     end
-  end 
+  end
 end
